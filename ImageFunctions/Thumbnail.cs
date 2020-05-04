@@ -103,7 +103,7 @@ namespace ImageFunctions
                             image.Save(output, encoder);
                             output.Position = 0;
                             //await blobContainerClient.UploadBlobAsync(blobName, output);
-                            blobClient.Upload(output, true);
+                            blobClient.Upload(image, true);
                         }
                     }
                     else
